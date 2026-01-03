@@ -10,6 +10,6 @@ RUN pip install --upgrade pip && \
 
 COPY nginx/nginx.conf /etc/nginx/conf.d/
 
-COPY booking_project /app/
+COPY . /app/
 
 #CMD ["uvicorn", "main:booking_app", "--host", "0.0.0.0", "--port", "8000"]
