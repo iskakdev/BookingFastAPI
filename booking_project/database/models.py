@@ -207,3 +207,4 @@ class Booking(Base):
     user_booking: Mapped[UserProfile] = relationship(UserProfile, back_populates='booking_user')
     hotel_booking: Mapped[Hotel] = relationship(Hotel, back_populates='booking_hotel')
     room_booking: Mapped[Room] = relationship(Room, back_populates='booking_room')
+
