@@ -18,7 +18,7 @@ class CityAdmin(ModelView, model=City):
 
 
 class ServiceAdmin(ModelView, model=Service):
-    column_list = [Service.service_name]
+    column_list = [Service.id, Service.service_name]
 
 
 class HotelAdmin(ModelView, model=Hotel):
